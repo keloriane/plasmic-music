@@ -1,5 +1,6 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
 import HelloWorld from "./components/HelloWorld/HelloWorld";
+import LineAnimation from "./components/LineAnimation";
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -23,9 +24,15 @@ export const PLASMIC = initPlasmicLoader({
 // http://localhost:3000/plasmic-host).  See
 // https://docs.plasmic.app/learn/app-hosting/#set-a-plasmic-project-to-use-your-app-host
 
-PLASMIC.registerComponent(HelloWorld , {
-  name:"Hello World",
+PLASMIC.registerComponent(LineAnimation , {
+  name:"Line Animation",
   props: {
-    
+    paragraph:'string',
+    x: "string",
+    y:"string",
+    duration:"number",
+    each:"number",
+    ease:"string",
+    split:"string",
   }
 });
