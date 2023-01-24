@@ -14,6 +14,7 @@
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
+    "babel-plugin-styled-components": "^1.8.0",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.5",
     "gsap": "^3.11.4",
